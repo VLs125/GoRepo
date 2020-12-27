@@ -2,12 +2,11 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"restGo/simple_rest"
 )
 
 func main() {
-	memoryStorage := simple_rest.NewMemoryStorage()
-	handler := simple_rest.NewHandler(memoryStorage)
+	memoryStorage := NewMemoryStorage()
+	handler := NewHandler(memoryStorage)
 
 	router := gin.Default()
 

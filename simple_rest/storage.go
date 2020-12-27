@@ -1,4 +1,4 @@
-package simple_rest
+package main
 
 import (
 	"errors"
